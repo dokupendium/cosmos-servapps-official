@@ -1,20 +1,5 @@
 { 
-  "cosmos-installer": {
-    "form": [
-      {
-        "name": "bookPath",
-        "label": "If you have an existing Calibre Library then enter the path (search is done recursively) bind it and CWA will automatically find it and mount it to the Web UI",
-        "initialValue": "{DefaultDataPath}/books",
-        "type": "text"
-      }
-    ],
-    "post-install": [
-      {
-        "type": "info",
-        "label": "Please read the Post-Install-Tasks at https://github.com/crocodilestick/Calibre-Web-Automated#post-install-tasks."
-      }
-    ]
-  },
+  "cosmos-installer": {},
   "minVersion": "0.8.0",
   "services": {
     "{ServiceName}": {
@@ -49,13 +34,6 @@
           "target": "/calibre-library",
           "type": "volume"
         }
-        {if Context.bookPath}
-        , {
-          "source": "{Context.bookPath}",
-          "target": "/books",
-          "type": "bind"
-        }
-        {/if}
       ],
       "routes": [
         {
