@@ -3,7 +3,7 @@
     "form": [
       {
         "name": "bookPath",
-        "label": "What is the path to your books?? (leave empty to not mount anything)",
+        "label": "If you have an existing Calibre Library then enter the path (search is done recursively) bind it and CWA will automatically find it and mount it to the Web UI",
         "initialValue": "{DefaultDataPath}/books",
         "type": "text"
       }
