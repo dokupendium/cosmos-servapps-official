@@ -26,7 +26,7 @@
       "environment": [
         "PUID=1000",
         "PGID=1000",
-        "TZ=auto",
+        "TZ=auto"
       ],
       "labels": {
         "cosmos-force-network-secured": "true",
@@ -38,12 +38,12 @@
           "source": "{ServiceName}-config",
           "target": "/config",
           "type": "volume"
-        }
+        },
         {
           "source": "{ServiceName}-cwa-book-ingest",
           "target": "/cwa-book-ingest",
           "type": "volume"
-        }
+        },
         {
           "source": "{ServiceName}-calibre-library",
           "target": "/calibre-library",
